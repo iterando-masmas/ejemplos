@@ -1,3 +1,6 @@
+//Creado por Andrés Melgar
+//para iterando++ http://iterando.online/
+//entrada: http://iterando.online/reconocimiento-de-notas-musicales-en-pseint/
 Algoritmo Reconocimiento_nota_LA
 	Escribir "Ingrese frecuencia (Hz): "
  Leer frecuencia
