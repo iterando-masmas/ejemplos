@@ -1,3 +1,6 @@
+//Creado por Andrés Melgar
+//para iterando++ http://iterando.online/
+//entrada: http://iterando.online/validacion-de-rango-del-espectro-de-luz-visible-en-pseint/
 Algoritmo Espectro_visible
 	Escribir 'Ingrese longitud de onda (nm): '
 	Leer lon_onda
