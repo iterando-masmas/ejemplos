@@ -3,7 +3,6 @@
  * entrada: 
  */
 #include <stdio.h>
-#include <math.h>
 
 int main() {
     double lon_onda;
@@ -11,9 +10,9 @@ int main() {
     scanf("%lf", &lon_onda);
     
     if (lon_onda>=380 && lon_onda<=780)
-        printf("La longitud de onde se encuentra dentro del espectro visible");
+        printf("La longitud de onda se encuentra dentro del espectro visible");
     else
-        printf("La longitud de onde no se encuentra dentro del espectro visible");
+        printf("La longitud de onda no se encuentra dentro del espectro visible");
     return 0;
 }
 

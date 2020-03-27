@@ -16,9 +16,9 @@ public class Espectro_Visible {
         lon_onda = reader.nextDouble();
 
         if (lon_onda >= 380 && lon_onda <= 780) {
-            System.out.printf("La longitud de onde se encuentra dentro del espectro visible");
+            System.out.printf("La longitud de onda se encuentra dentro del espectro visible");
         } else {
-            System.out.printf("La longitud de onde no se encuentra dentro del espectro visible");
+            System.out.printf("La longitud de onda no se encuentra dentro del espectro visible");
         }
     }
 
