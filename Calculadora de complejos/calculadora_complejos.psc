@@ -36,7 +36,7 @@ Algoritmo Calculadora_complejos
 			FinSi
 		De Otro Modo:
 			operacion_valida <- Falso
-			Escribir 'La opereación no es válida'
+			Escribir 'La operación no es válida'
 	FinSegun
 	Si operacion_valida Entonces
 		Si division_por_cero Entonces

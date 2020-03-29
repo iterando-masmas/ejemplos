@@ -55,7 +55,7 @@ public class Calculadora_Complejos {
                 break;
             default:
                 operacion_valida = false;
-                System.out.printf("La opereación no es válida%n");
+                System.out.printf("La operación no es válida%n");
         }
         if (operacion_valida) {
             if (division_por_cero) {

@@ -49,7 +49,7 @@ int main() {
             break;
         default:
             operacion_valida = 0;
-            printf("La opereación no es válida\n");
+            printf("La operación no es válida\n");
     }
     if (operacion_valida)
         if (division_por_cero)

@@ -31,7 +31,7 @@ elif operacion=='/':
         par_imag /= denominador
 else:                
     operacion_valida = False
-    print("La opereación no es válida")
+    print("La operación no es válida")
 
 if operacion_valida:
     if division_por_cero:

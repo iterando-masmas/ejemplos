@@ -27,7 +27,7 @@ elif operacion=='/':
         n3=n1/n2
 else:                
     operacion_valida = False
-    print("La opereación no es válida")
+    print("La operación no es válida")
 
 if operacion_valida:
     if division_por_cero:
