@@ -27,5 +27,4 @@ public class Suma_Potencias_X {
             System.out.printf("El valor de 1/(1-x) es: %f%n", suma);
         }
     }
-
 }
