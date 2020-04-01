@@ -34,5 +34,4 @@ public class E_Elevado_a_la_X {
             System.out.printf("e^x = %f%n", sumatoria);
         }
     }
-
 }
