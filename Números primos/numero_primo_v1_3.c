@@ -9,11 +9,14 @@ int main() {
         printf("El número debe ser mayor que cero\n");
     else {
         int cant_divisores = 0;
+        int encontro_divisores = 0;
         int mitad = n / 2;
         int i = 2;
-        while (i <= mitad) {
-            if (n % i == 0)
+        while (i <= mitad && !encontro_divisores) {
+            if (n % i == 0) {
                 cant_divisores++;
+                encontro_divisores = 1;
+            }
             i++;
         }
         if (cant_divisores == 0 & n > 1)
@@ -23,4 +26,3 @@ int main() {
     }
     return 0;
 }
-

@@ -10,11 +10,14 @@ int main() {
         printf("El número debe ser mayor que cero\n");
     else {
         int cant_divisores = 0;
+        int encontro_divisores = 0;
         int limite = sqrt(n);
         int i = 2;
-        while (i <= limite) {
-            if (n % i == 0)
+        while (i <= limite && !encontro_divisores) {
+            if (n % i == 0) {
                 cant_divisores++;
+                encontro_divisores = 1;
+            }
             i++;
         }
         if (cant_divisores == 0 & n > 1)
@@ -24,4 +27,3 @@ int main() {
     }
     return 0;
 }
-

@@ -14,15 +14,17 @@ public class Numero_Primo_v1_4 {
             System.out.printf("El número debe ser mayor que cero%n");
         } else {
             int cant_divisores = 0;
-            int mitad=(int) sqrt(n);
+            boolean encontro_divisores = false;
+            int mitad = (int) sqrt(n);
             int i = 2;
-            while (i <= mitad) {
+            while (i <= mitad && !encontro_divisores) {
                 if (n % i == 0) {
                     cant_divisores++;
+                    encontro_divisores = true;
                 }
                 i++;
             }
-            if (cant_divisores == 0 && n>1) {
+            if (cant_divisores == 0 && n > 1) {
                 System.out.printf("El número es primo%n");
             } else {
                 System.out.printf("El número no es primo%n");
