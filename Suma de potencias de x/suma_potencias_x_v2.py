@@ -4,7 +4,6 @@ n=int(input("Ingrese la cantidad de términos: "))
 if abs(x) >= 1:
     print("Valor de x incorrecto")
 else:
-    i=0
     suma=0
     for i in range(n):
         suma += x**i
