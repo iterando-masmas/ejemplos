@@ -1,6 +1,6 @@
 /* Creado por Andrés Melgar
  * para iterando++ http://iterando.online/
- * entrada: 
+ * entrada: http://iterando.online/ejercicios-resueltos/validacion-de-rango-del-espectro-de-luz-visible-en-ansi-c/
  */
 #include <stdio.h>
 
