@@ -1,6 +1,6 @@
 #Creado por Andrés Melgar
 #para iterando++ http://iterando.online/
-#entrada: 
+#entrada: http://iterando.online/ejercicios-resueltos/raices-de-la-ecuacion-cuadratica-en-python/
 import math 
 
 a = int(input("Ingrese coeficiente a:"))
