@@ -1,3 +1,6 @@
+#Creado por Andrés Melgar
+#para iterando++ http://iterando.online/
+#entrada: http://iterando.online/ejercicios-resueltos/e-elevado-a-la-x-en-python/
 x=float(input("Ingrese el valor de x: "))
 n=int(input("Ingrese la cantidad de términos: "))
 
