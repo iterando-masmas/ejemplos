@@ -1,6 +1,6 @@
 /* Creado por Andrés Melgar
  * para iterando++ http://iterando.online/
- * entrada: 
+ * entrada: http://iterando.online/ejercicios-resueltos/reconocimiento-de-notas-musicales-en-ansi-c/
  */
 #include <stdio.h>
 
