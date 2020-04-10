@@ -1,3 +1,6 @@
+//Creado por Andrés Melgar
+//para iterando++ http://iterando.online/
+//entrada: http://iterando.online/ejercicios-resueltos/e-elevado-a-la-x-en-pseint/
 Algoritmo e_elevado_a_la_x
 	Escribir "Ingrese el valor de x: "
 	Leer x
