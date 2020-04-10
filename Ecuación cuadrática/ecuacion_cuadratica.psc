@@ -1,5 +1,6 @@
 //Creado por Andrés Melgar
 //para iterando++ http://iterando.online/
+//entrada: http://iterando.online/ejercicios-resueltos/raices-de-la-ecuacion-cuadratica-en-pseint/
 Algoritmo EcuacionCuadratica
 	Escribir 'Ingrese los coeficientes de a, b, c: '
 	Leer a,b,c
