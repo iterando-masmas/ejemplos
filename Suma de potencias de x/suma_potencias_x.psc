@@ -1,3 +1,6 @@
+/Creado por Andrés Melgar
+//para iterando++ http://iterando.online/
+//entrada: http://iterando.online/ejercicios-resueltos/suma-de-potencias-de-x-en-pseint/
 Algoritmo Suma_potencias_x
 	Escribir "Ingrese el valor de x(|x|<1): "
 	Leer x
