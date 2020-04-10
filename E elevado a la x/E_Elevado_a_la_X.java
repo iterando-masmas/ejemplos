@@ -1,6 +1,6 @@
 /* Creado por Andrés Melgar
  * para iterando++ http://iterando.online/
- * entrada: 
+ * entrada: http://iterando.online/ejercicios-resueltos/e-elevado-a-la-x-en-java/
  */
 package e_elevado_a_la_x;
 
