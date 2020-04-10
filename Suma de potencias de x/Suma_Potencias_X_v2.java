@@ -1,3 +1,7 @@
+/* Creado por Andrés Melgar
+ * para iterando++ http://iterando.online/
+ * entrada: http://iterando.online/ejercicios-resueltos/suma-de-potencias-de-x-en-java/
+ */
 package suma_potencias_x;
 
 import static java.lang.Math.abs;
