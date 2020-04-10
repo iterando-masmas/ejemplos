@@ -1,3 +1,6 @@
+//Creado por Andrés Melgar
+//para iterando++ http://iterando.online/
+//entrada: http://iterando.online/ejercicios-resueltos/verificacion-de-numeros-primos-en-pseint/
 Algoritmo Verificacion_Numero_Primo
  Escribir "Ingrese un número natural (>0): "
  Leer n
