@@ -1,6 +1,6 @@
 /* Creado por Andrés Melgar
  * para iterando++ http://iterando.online/
- * entrada: 
+ * entrada: http://iterando.online/ejercicios-resueltos/e-elevado-a-la-x-en-c/
  */
 #include <stdio.h>
 #include <math.h>
