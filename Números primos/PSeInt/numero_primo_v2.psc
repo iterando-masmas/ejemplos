@@ -1,3 +1,6 @@
+//Creado por Andrés Melgar
+//para iterando++ http://iterando.online/
+//entrada: http://iterando.online/ejercicios-resueltos/verificacion-de-numeros-primos-en-pseint/
 Algoritmo Teorema_de_Wilson
  Escribir "Ingrese un número natural (>0): "
  Leer n
