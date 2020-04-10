@@ -1,3 +1,7 @@
+/* Creado por Andrés Melgar
+ * para iterando++ http://iterando.online/
+ * entrada: http://iterando.online/ejercicios-resueltos/verificacion-de-numeros-primos-en-c/
+ */
 #include <stdio.h>
 
 int main() {
