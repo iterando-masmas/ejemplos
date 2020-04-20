@@ -7,7 +7,7 @@ def factorial(n):
     while i <= n:
         productoria *= i
         i+=1
-    return productoria;
+    return productoria
 
 n=int(input("Ingrese número n (n>=0): "))
 if n < 0 :

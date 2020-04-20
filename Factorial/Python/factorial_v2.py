@@ -5,7 +5,7 @@ def factorial(n):
     productoria = 1
     for i in range(2, n+1):
         productoria *= i
-    return productoria;
+    return productoria
 
 n=int(input("Ingrese número n (n>=0): "))
 if n < 0 :
