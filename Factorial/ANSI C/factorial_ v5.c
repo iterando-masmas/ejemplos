@@ -10,16 +10,17 @@ void inicializar_arreglo(long* factorial);
 int main() {
     int n;
 
-    long factorial[MAX_FACTORIALES + 1];
-    inicializar_arreglo(factorial);
+    long factorial[MAX_FACTORIALES + 1];    
 
     printf("Ingrese número n (0<=n<=20): ");
     scanf("%d", &n);
 
     if (n < 0 || n > MAX_FACTORIALES)
         printf("Debe ingresar un número en el rango [0..20]");
-    else
+    else{
+        inicializar_arreglo(factorial);
         printf("%d!=%li", n, factorial[n]);
+    }
     return 0;
 }
 
