@@ -1,3 +1,6 @@
+//Creado por Andrés Melgar
+//para iterando++ http://iterando.online/
+//entrada: http://iterando.online/ejercicios-resueltos/fibonacci-en-pseint/
 Algoritmo Sucesion_de_Fibonacci
 	Escribir "Ingrese número de términos: "
 	Leer n

@@ -1,3 +1,7 @@
+/* Creado por Andrés Melgar
+ * para iterando++ http://iterando.online/
+ * entrada: http://iterando.online/ejercicios-resueltos/fibonacci-en-c/
+ */
 #include<stdio.h>
 #define MAX_TERMINOS 93
 

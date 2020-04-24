@@ -1,3 +1,6 @@
+#Creado por Andrés Melgar
+#para iterando++ http://iterando.online/
+#entrada: http://iterando.online/ejercicios-resueltos/fibonacci-en-python/
 def fibonacci(n):
     if n<=2:
         return n-1

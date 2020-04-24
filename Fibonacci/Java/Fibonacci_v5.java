@@ -1,3 +1,7 @@
+/* Creado por Andrés Melgar
+ * para iterando++ http://iterando.online/
+ * entrada: http://iterando.online/ejercicios-resueltos/fibonacci-en-java/
+ */
 package fibonacci_v5;
 
 import java.util.Scanner;

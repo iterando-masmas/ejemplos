@@ -1,3 +1,6 @@
+#Creado por Andrés Melgar
+#para iterando++ http://iterando.online/
+#entrada: http://iterando.online/ejercicios-resueltos/fibonacci-en-python/
 import numpy
 
 def inicializar_arreglo(fibonacci, n):

@@ -1,3 +1,6 @@
+#Creado por Andrés Melgar
+#para iterando++ http://iterando.online/
+#entrada: http://iterando.online/ejercicios-resueltos/fibonacci-en-python/
 n=int(input("Ingrese número de términos: "))
 if n<=0:
     print("Debe ingresar un número mayor que cero")

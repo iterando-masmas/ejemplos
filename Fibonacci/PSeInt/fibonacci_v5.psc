@@ -1,3 +1,6 @@
+//Creado por Andrés Melgar
+//para iterando++ http://iterando.online/
+//entrada: http://iterando.online/ejercicios-resueltos/fibonacci-en-pseint/
 Funcion termino_serie<-fibonacci (n)
 	Si n=1 Entonces
 		termino_serie <- 0		

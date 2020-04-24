@@ -1,3 +1,6 @@
+//Creado por Andrés Melgar
+//para iterando++ http://iterando.online/
+//entrada: http://iterando.online/ejercicios-resueltos/fibonacci-en-pseint/
 Funcion inicializar_arreglo(fibonacci)
 	fibonacci[1]<-0
 	fibonacci[2]<-1
