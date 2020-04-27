@@ -22,5 +22,4 @@ Algoritmo Sucesion_de_Fibonacci
 			Escribir fibonacci[i]
 		Fin Para			
 	FinSi	
-	Escribir z
 FinAlgoritmo

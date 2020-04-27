@@ -2,7 +2,7 @@
  * para iterando++ http://iterando.online/
  * entrada: http://iterando.online/ejercicios-resueltos/fibonacci-en-java/
  */
-package fibonacci_v3;
+package fibonacci_v3_1;
 
 import java.util.Scanner;
 
@@ -17,22 +17,19 @@ public class Fibonacci_v3_1 {
         if (n <= 0) {
             System.out.printf("Debe ingresar un número mayor que cero");
         } else {
-            if (n >= 1) {
-                System.out.printf("0 ");
-            }
+            System.out.printf("0 ");
             if (n >= 2) {
-                System.out.printf("1 ");
+                long anterior = 0;
+                long actual = 1;
+                int i = 2;
+                do {
+                    long copia_actual = actual;
+                    actual = actual + anterior;
+                    anterior = copia_actual;
+                    System.out.printf("%d ", actual);
+                    i++;
+                } while (i <= n);
             }
-            long anterior = 0;
-            long actual = 1;
-            int i = 2;
-            do {
-                long copia_actual = actual;
-                actual = actual + anterior;
-                anterior = copia_actual;
-                System.out.printf("%d ", actual);
-                i++;
-            } while (i < n);
         }
     }
 }
