@@ -1,6 +1,6 @@
 /* Creado por Andrés Melgar
  * para iterando++ http://iterando.online/
- * entrada: 
+ * entrada: http://iterando.online/ejercicios-resueltos/pasar-a-mayuscula-minuscula-un-caracter-en-c/
  */
 #include<stdio.h>
 

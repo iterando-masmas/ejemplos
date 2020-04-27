@@ -1,6 +1,6 @@
 /* Creado por Andrés Melgar
  * para iterando++ http://iterando.online/
- * entrada: 
+ * entrada: http://iterando.online/ejercicios-resueltos/pasar-a-mayuscula-minuscula-un-caracter-en-java/
  */
 package pasa_a_mayuscula;
 
@@ -19,5 +19,4 @@ public class Pasa_a_Mayuscula {
         }
         System.out.printf("En mayúscula es: %c%n", c);
     }
-
 }

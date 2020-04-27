@@ -1,6 +1,6 @@
 /* Creado por Andrés Melgar
  * para iterando++ http://iterando.online/
- * entrada: 
+ * entrada: http://iterando.online/ejercicios-resueltos/pasar-a-mayuscula-minuscula-un-caracter-en-java/
  */
 package pasa_a_minuscula;
 
@@ -18,6 +18,5 @@ public class Pasa_a_Minuscula {
             c = (char)(c - (int) 'A' + (int) 'a');
         }
         System.out.printf("En minúscula es: %c%n", c);
-    }
-    
+    } 
 }
