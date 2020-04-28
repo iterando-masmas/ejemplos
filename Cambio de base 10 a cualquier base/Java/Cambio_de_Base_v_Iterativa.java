@@ -1,3 +1,7 @@
+/* Creado por Andrés Melgar
+ * para iterando++ http://iterando.online/
+ * entrada: http://iterando.online/ejercicios-resueltos/cambio-de-base-en-java/
+ */
 package cambio_de_base_v_iterativa;
 
 import java.util.Scanner;

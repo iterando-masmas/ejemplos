@@ -1,3 +1,6 @@
+#Creado por Andrés Melgar
+#para iterando++ http://iterando.online/
+#entrada: http://iterando.online/ejercicios-resueltos/cambio-de-base-en-python/
 def imprime_digito_en_base(digito):
     if digito < 10:
         print("{:d}".format(digito), end="")
