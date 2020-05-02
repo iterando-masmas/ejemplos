@@ -1,7 +1,6 @@
 #Creado por Andrés Melgar
 #para iterando++ http://iterando.online/
-#entrada: 
-
+#entrada: http://iterando.online/ejercicios-resueltos/calculadora-de-numeros-complejos-en-python/
 operacion=input("Ingrese operación (+,-,*,/):")
 par_real1=float(input("Ingrese parte real del número 1: "))
 par_imag1=float(input("Ingrese parte imaginaria del número 1: "))

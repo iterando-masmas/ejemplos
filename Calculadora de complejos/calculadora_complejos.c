@@ -58,4 +58,3 @@ int main() {
             printf("El resultado es: %.3lf + %.3lfi\n", par_real, par_imag);
     return 0;
 }
-

@@ -1,7 +1,7 @@
 /* Creado por Andrés Melgar
  * para iterando++ http://iterando.online/
  * entrada: http://iterando.online/ejercicios-resueltos/calculadora-de-numeros-complejos-en-java/
- */
+ */ 
 package calculadora_complejos;
 
 import static java.lang.Double.NaN;
@@ -65,5 +65,4 @@ public class Calculadora_Complejos {
             }
         }
     }
-
 }
