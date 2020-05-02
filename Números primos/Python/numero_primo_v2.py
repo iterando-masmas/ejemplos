@@ -15,4 +15,3 @@ else:
         print("El número es primo")
     else:
         print("El número no es primo")
-

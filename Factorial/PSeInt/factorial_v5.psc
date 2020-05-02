@@ -19,5 +19,3 @@ Algoritmo Calculo_de_Factorial
 		Escribir n, "! = ", factorial(n)
 	FinSi
 FinAlgoritmo
-
-

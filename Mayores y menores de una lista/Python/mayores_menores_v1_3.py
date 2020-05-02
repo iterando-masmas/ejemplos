@@ -2,6 +2,7 @@
 #para iterando++ http://iterando.online/
 #entrada: http://iterando.online/ejercicios-resueltos/mayores-y-menores-de-un-conjunto-de-numeros-en-python/
 import math
+
 i=0
 mayor_magnitud = -math.inf
 menor_magnitud = math.inf

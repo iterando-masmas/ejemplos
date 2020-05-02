@@ -31,4 +31,3 @@ else:
     print("El 1er número con menor magnitud es: {:d}".format(menor_magnitud1))
     if i >1:
         print("El 2do número con menor magnitud es: {:d}".format(menor_magnitud2))
-

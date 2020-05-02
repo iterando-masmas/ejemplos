@@ -28,4 +28,3 @@ Algoritmo Mayores_y_menores
 		Escribir "El número con menor magnitud es: ", menor_magnitud
 	FinSi
 FinAlgoritmo
-

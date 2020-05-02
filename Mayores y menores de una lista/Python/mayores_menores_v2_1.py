@@ -1,7 +1,7 @@
 #Creado por Andrés Melgar
 #para iterando++ http://iterando.online/
 #entrada: http://iterando.online/ejercicios-resueltos/mayores-y-menores-de-un-conjunto-de-numeros-en-python/
-i=0
+i=0 
 while True:
     n=int(input("Ingrese número {:d}: ".format(i+1)))
     if n < 0:

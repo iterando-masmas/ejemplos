@@ -15,4 +15,3 @@ int main() {
         printf("La longitud de onda no se encuentra dentro del espectro visible");
     return 0;
 }
-

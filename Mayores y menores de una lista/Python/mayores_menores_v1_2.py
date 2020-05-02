@@ -18,4 +18,4 @@ if i == 0:
     print("No se ha ingresado ningún número");
 else:
     print("El número con mayor magnitud es: {:d}".format(mayor_magnitud))
-    print("El número con menor magnitud es: {:d}".format(menor_magnitud))
+    print("El número con menor magnitud es: {:d}".format(menor_magnitud)) 

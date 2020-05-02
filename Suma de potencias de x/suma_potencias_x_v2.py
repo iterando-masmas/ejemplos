@@ -11,4 +11,3 @@ else:
     for i in range(n):
         suma += x**i
     print("El valor de 1/(1-x) es: {:.3f}".format(suma))
-

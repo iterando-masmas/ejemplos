@@ -12,3 +12,4 @@ if n < 0 :
     print("Debe ingresar un número mayor o igual a cero")
 else:
     print("{:d}!={:d}".format(n, factorial(n)))
+    
