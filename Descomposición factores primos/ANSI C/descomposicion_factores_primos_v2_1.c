@@ -2,7 +2,7 @@
  * para iterando++ http://iterando.online/
  * entrada: http://iterando.online/ejercicios-resueltos/descomposicion-en-factores-primos-en-c/
  */
- #include <stdio.h>
+#include <stdio.h>
 #include <math.h>
 
 int es_primo(int n);

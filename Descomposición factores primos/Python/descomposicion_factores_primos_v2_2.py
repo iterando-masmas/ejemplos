@@ -64,4 +64,3 @@ if n <= 1:
     print("Debe ingresar un número mayor que uno")
 else:
     descomponer_factores(n)
-
