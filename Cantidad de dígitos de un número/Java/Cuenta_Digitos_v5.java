@@ -1,3 +1,7 @@
+/* Creado por Andrés Melgar
+ * para iterando++ http://iterando.online/
+ * entrada: http://iterando.online/ejercicios-resueltos/cantidad-de-digitos-de-un-numero-en-java/
+ */
 package cuenta_digitos_v5;
 
 import static java.lang.Math.abs;

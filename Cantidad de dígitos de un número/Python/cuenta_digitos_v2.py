@@ -1,3 +1,6 @@
+#Creado por Andrés Melgar
+#para iterando++ http://iterando.online/
+#entrada: http://iterando.online/ejercicios-resueltos/cantidad-de-digitos-de-un-numero-en-python/
 def cuenta_digitos(numero):
     if numero == 0:
         return 0
