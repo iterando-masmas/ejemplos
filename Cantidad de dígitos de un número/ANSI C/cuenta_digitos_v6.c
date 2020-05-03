@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-int cuenta_digitos(int n, int base);
+int cuenta_digitos(int numero, int base);
 
 int main() {
     int numero, base;
