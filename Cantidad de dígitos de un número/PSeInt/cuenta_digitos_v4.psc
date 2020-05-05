@@ -5,7 +5,8 @@ Funcion total_digitos <- cuenta_digitos(n)
 	Si n=0 Entonces
 		total_digitos <- 0	
 	SiNo
-		total_digitos <- 1 + cuenta_digitos(n-1)
+		n <- trunc(n/10)
+		total_digitos <- 1 + cuenta_digitos(n)
 	FinSi
 	
 Fin Funcion
