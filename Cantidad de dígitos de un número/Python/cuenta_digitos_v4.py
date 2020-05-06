@@ -6,7 +6,7 @@ import math
 def cuenta_digitos(numero, base):
     if numero == 0:
         return 1
-    return int(math.log(numero)+math.log(base)) + 1
+    return int(math.log(numero)/math.log(base)) + 1
 
 numero=int(input("Ingrese un número: "))
 base=int(input("Ingrese una base: "))
