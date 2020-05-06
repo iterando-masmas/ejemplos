@@ -1,3 +1,6 @@
+#Creado por Andrés Melgar
+#para iterando++ http://iterando.online/
+#entrada: http://iterando.online/ejercicios-resueltos/numero-palindromo-en-python/
 def invierte_numero(numero):
     numero_invertido = 0
     while numero > 0:

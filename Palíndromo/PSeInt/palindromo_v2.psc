@@ -1,3 +1,6 @@
+//Creado por Andrés Melgar
+//para iterando++ http://iterando.online/
+//entrada: http://iterando.online/ejercicios-resueltos/numero-palindromo-en-pseint/
 Funcion cantidad_de_digitos <- cuenta_digitos(n)
 	Si n=0 Entonces
 		cantidad_de_digitos <- 0

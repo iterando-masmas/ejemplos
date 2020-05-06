@@ -1,3 +1,7 @@
+/* Creado por Andrés Melgar
+ * para iterando++ http://iterando.online/
+ * entrada: http://iterando.online/ejercicios-resueltos/numero-palindromo-en-java/
+ */
 package palindromo_v3;
 
 import static java.lang.Math.abs;

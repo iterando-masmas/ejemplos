@@ -1,3 +1,6 @@
+//Creado por Andrés Melgar
+//para iterando++ http://iterando.online/
+//entrada: http://iterando.online/ejercicios-resueltos/numero-palindromo-en-pseint/
 Funcion numero_invertido <- invierte_numero(n)
 	numero_invertido <- 0
 	Mientras n>0 Hacer

@@ -1,3 +1,6 @@
+#Creado por Andrés Melgar
+#para iterando++ http://iterando.online/
+#entrada: http://iterando.online/ejercicios-resueltos/numero-palindromo-en-python/
 import math
 
 def cuenta_digitos(numero):
