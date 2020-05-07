@@ -12,14 +12,14 @@ import java.util.Scanner;
 public class Ecuacion_Cuadratica {
 
     public static void main(String[] args) {
-        int a, b, c;
+        double a, b, c;
         double discriminante;
 
         System.out.printf("Ingrese coeficientes a, b y c de la ecuación: ");
         Scanner reader = new Scanner(System.in);
-        a = reader.nextInt();
-        b = reader.nextInt();
-        c = reader.nextInt();
+        a = reader.nextDouble();
+        b = reader.nextDouble();
+        c = reader.nextDouble();
 
         discriminante = pow(b, 2) - 4 * a * c;
         if (discriminante >= 0) {

@@ -6,11 +6,11 @@
 #include <math.h>
 
 int main() {
-    int a, b, c;
+    double a, b, c;
     double discriminante;
 
     printf("Ingrese coeficientes a, b y c de la ecuación: ");
-    scanf("%d %d %d", &a, &b, &c);
+    scanf("%lf %lf %lf", &a, &b, &c);
 
     discriminante = pow(b, 2) - 4 * a*c;
     if (discriminante >= 0)

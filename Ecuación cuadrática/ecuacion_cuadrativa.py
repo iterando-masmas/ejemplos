@@ -3,9 +3,9 @@
 #entrada: http://iterando.online/ejercicios-resueltos/raices-de-la-ecuacion-cuadratica-en-python/
 import math 
 
-a = int(input("Ingrese coeficiente a:"))
-b = int(input("Ingrese coeficiente b:"))
-c = int(input("Ingrese coeficiente c:"))
+a = float(input("Ingrese coeficiente a:"))
+b = float(input("Ingrese coeficiente b:"))
+c = float(input("Ingrese coeficiente c:"))
 
 discriminante = b**2 - 4 * a * c
 if discriminante >= 0:
