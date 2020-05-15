@@ -10,7 +10,7 @@ def es_primo(n):
     encontro_divisores = False
     limite=math.sqrt(n)
     i = 2
-    while (i <= limite and not encontro_divisores):
+    while i <= limite and not encontro_divisores:
         if n % i == 0:
             cant_divisores+=1
             encontro_divisores = True
@@ -51,7 +51,7 @@ def descomponer_factores(n):
             factor_primo = siguiente_primo(factor_primo)
         
         if productoria == n:
-            break;
+            break
     if hay_factores:
         print("x", end="")
     if cant_factores==1:

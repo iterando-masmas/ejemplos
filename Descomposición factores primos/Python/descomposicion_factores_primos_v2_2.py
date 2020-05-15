@@ -10,7 +10,7 @@ def es_primo(n):
     encontro_divisores = False
     limite=math.sqrt(n)
     i = 2
-    while (i <= limite and not encontro_divisores):
+    while i <= limite and not encontro_divisores:
         if n % i == 0:
             cant_divisores+=1
             encontro_divisores = True
