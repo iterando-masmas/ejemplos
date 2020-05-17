@@ -1,3 +1,7 @@
+/* Creado por Andrés Melgar
+ * para iterando++ http://iterando.online/
+ * entrada: http://iterando.online/ejercicios-resueltos/numero-armstrong-en-java/
+ */
 package lista_de_armstrong;
 
 import static java.lang.Math.log10;

@@ -1,9 +1,6 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[2]:
-
-
+#Creado por Andrés Melgar
+#para iterando++ http://iterando.online/
+#entrada: http://iterando.online/ejercicios-resueltos/numero-armstrong-en-python/
 import math
 
 def cuenta_digitos(numero):
@@ -25,4 +22,3 @@ limite = 2**31-1
 for i in range(1, limite+1):
     if es_Armstrong(i):
         print(i)
-

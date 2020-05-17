@@ -1,3 +1,7 @@
+/* Creado por Andrés Melgar
+ * para iterando++ http://iterando.online/
+ * entrada: http://iterando.online/ejercicios-resueltos/numero-armstrong-en-c/
+ */
 #include <stdio.h>
 #include <limits.h>
 #include <math.h>
