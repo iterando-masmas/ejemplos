@@ -7,7 +7,7 @@ Algoritmo EcuacionCuadratica
 	discriminante <- b^2-4*a*c
 	Si discriminante>=0 Entonces
 		Si discriminante=0 Entonces
-			x <- -b/2*a
+			x <- -b/(2*a)
 			Escribir 'La raíz única es: ',x
 		SiNo
 			x1 <- (-b+rc(discriminante))/(2*a)

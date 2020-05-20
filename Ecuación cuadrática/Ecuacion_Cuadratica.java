@@ -23,7 +23,7 @@ public class Ecuacion_Cuadratica {
         double discriminante = pow(b, 2) - 4 * a * c;
         if (discriminante >= 0) {
             if (discriminante == 0) {
-                double x = -b / 2 * a;
+                double x = -b / (2 * a);
                 System.out.printf("La raíz única es %.3f%n", x);
             } else {
                 double x1, x2;

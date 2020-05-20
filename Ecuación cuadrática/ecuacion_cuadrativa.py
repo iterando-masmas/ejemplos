@@ -10,7 +10,7 @@ c = float(input("Ingrese coeficiente c:"))
 discriminante = b**2 - 4 * a * c
 if discriminante >= 0:
     if discriminante == 0:
-        x = -b / 2 * a
+        x = -b / (2 * a)
         print("La raíz única es {:.3f}".format(x))
     else:
         x1 = (-b + math.sqrt(discriminante)) / (2 * a)
