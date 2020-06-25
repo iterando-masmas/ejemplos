@@ -6,6 +6,6 @@ Algoritmo Reconocimiento_nota_LA
  Leer frecuencia
 	
  Si frecuencia = 440 Entonces
-	 Escribir "La nota leída es LA"
+	 Escribir "A"
 	FinSi
 FinAlgoritmo

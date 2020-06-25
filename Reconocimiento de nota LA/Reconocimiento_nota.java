@@ -2,21 +2,20 @@
  * para iterando++ http://iterando.online/
  * entrada: http://iterando.online/ejercicios-resueltos/reconocimiento-de-notas-musicales-en-java/
  */
-package reconocimiento_notal_la;
+package reconocimieneto_nota;
 
 import java.util.Scanner;
 
-public class Reconocimiento_notal_LA {
+public class Reconocimiento_nota {
 
     public static void main(String[] args) {
-        int frecuencia;
+        double frecuencia;
         Scanner reader = new Scanner(System.in);
         System.out.printf("Ingrese frecuencia (Hz): ");
-        frecuencia = reader.nextInt();
+        frecuencia = reader.nextDouble();
 
         if (frecuencia == 440) {
-            System.out.printf("La nota leída es LA%n");
+            System.out.printf("A");
         }
     }
-
 }

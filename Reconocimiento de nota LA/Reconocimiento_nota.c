@@ -5,12 +5,12 @@
 #include <stdio.h>
 
 int main() {
-    int frecuencia;
+    double frecuencia;
     printf("Ingrese frecuencia (Hz): ");
-    scanf("%d", &frecuencia);
+    scanf("%lf", &frecuencia);
 
     if (frecuencia == 440)
-        printf("La nota leída es LA\n");
+        printf("A");
 
     return 0;
 }

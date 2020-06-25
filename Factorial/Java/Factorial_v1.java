@@ -30,5 +30,4 @@ public class Factorial_v1 {
             System.out.printf("%d!=%d%n", n, factorial(n));
         }
     }
-
 }
