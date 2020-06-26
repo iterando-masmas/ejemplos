@@ -10,7 +10,7 @@ Funcion cantidad_de_digitos <- cuenta_digitos(n)
 Fin Funcion
 
 Funcion verifica_Armstrong <- es_Armstrong(n)
-	total_digitos <- cuenta_digitos(n);
+	total_digitos <- cuenta_digitos(n)
 	copia_numero <- n
 	suma_de_potencias <- 0
 	Para i<-1 Hasta total_digitos Con Paso 1 Hacer
