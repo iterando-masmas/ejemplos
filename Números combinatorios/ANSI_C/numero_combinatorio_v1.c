@@ -1,4 +1,8 @@
-#include <stdio.h>
+/* Creado por Andrés Melgar
+ * para iterando++ http://iterando.online/
+ * entrada: http://iterando.online/ejercicios-resueltos/numero-combinatorio-en-c/
+ */
+ #include <stdio.h>
 
 long factorial(int n);
 long combinatorio(int n, int k);
@@ -10,8 +14,8 @@ int main() {
     printf("Ingrese k: ");
     scanf("%d", &k);
 
-    if (n <= 0 || k <= 0)
-        printf("n y k deben ser mayores que cero\n");
+    if (n < 0 || k < 0)
+        printf("n y k deben ser mayores o iguales que cero\n");
     else if (k > n)
         printf("n debe ser mayor o igual que k\n");
     else

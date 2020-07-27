@@ -1,4 +1,8 @@
-#include <stdio.h>
+/* Creado por Andrés Melgar
+ * para iterando++ http://iterando.online/
+ * entrada: http://iterando.online/ejercicios-resueltos/numero-combinatorio-en-c/
+ */
+ #include <stdio.h>
 #define DIMENSION 20
 
 long combinatorio[DIMENSION][DIMENSION];
@@ -11,8 +15,8 @@ int main() {
     printf("Ingrese k: ");
     scanf("%d", &k);
 
-    if (n <= 0 || k <= 0)
-        printf("n y k deben ser mayores que cero\n");
+    if (n < 0 || k < 0)
+        printf("n y k deben ser mayores o iguales que cero\n");
     else if (k > n)
         printf("n debe ser mayor o igual que k\n");
     else {
@@ -25,13 +29,14 @@ int main() {
 void inicializa_arreglo() {
     int i;
     for (i = 0; i < DIMENSION; i++) {
-        combinatorio[0][i] = 0;
         combinatorio[i][0] = 1;
+        combinatorio[i][i] = 1;
+        
     }
     int n;
     for (n = 1; n < DIMENSION; n++) {
         int k;
-        for (k = 1; k <= n; k++)
+        for (k = 1; k <= n-1; k++)
             combinatorio[n][k] = combinatorio[n - 1][k - 1] + combinatorio[n - 1][k];
     }
 }

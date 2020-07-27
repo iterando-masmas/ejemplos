@@ -1,3 +1,7 @@
+/* Creado por Andrés Melgar
+ * para iterando++ http://iterando.online/
+ * entrada: http://iterando.online/ejercicios-resueltos/numero-combinatorio-en-java/
+ */
 package numero_combinatorio_v3;
 
 import java.util.Scanner;
@@ -32,8 +36,8 @@ public class Numero_Combinatorio_v3 {
         System.out.printf("Ingrese k: ");
         int k = reader.nextInt();
 
-        if (n <= 0 || k <= 0) {
-            System.out.printf("n y k deben ser mayores que cero%n");
+        if (n < 0 || k < 0) {
+            System.out.printf("n y k deben ser mayores o iguales que cero%n");
         } else if (k > n) {
             System.out.printf("n debe ser mayor o igual que k%n");
         } else {

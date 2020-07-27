@@ -1,3 +1,6 @@
+#Creado por Andrés Melgar
+#para iterando++ http://iterando.online/
+#entrada: http://iterando.online/numero-combinatorio-en-python/
 def combinatorio(n, k):
     n_menos_k = n - k
     if k > n_menos_k:
@@ -17,8 +20,8 @@ def combinatorio(n, k):
 n=int(input("Ingrese n: "))
 k=int(input("Ingrese k: "))
 
-if n <= 0 or k <= 0:
-    print("n y k deben ser mayores que cero")
+if n < 0 or k < 0:
+    print("n y k deben ser mayores o iguales que cero")
 elif k > n:
     print("n debe ser mayor o igual que k")
 else:
