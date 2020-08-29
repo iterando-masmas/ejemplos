@@ -5,7 +5,6 @@
 package calculadora_complejos;
 
 import static java.lang.Double.NaN;
-import static java.lang.Math.pow;
 import java.util.Scanner;
 
 public class Calculadora_Complejos {
@@ -15,7 +14,7 @@ public class Calculadora_Complejos {
         double par_real1, par_imag1, par_real2, par_imag2;
 
         Scanner reader = new Scanner(System.in);
-        System.out.printf("Ingrese operación (+,-,*,/):");
+        System.out.printf("Ingrese operación (+,-,*,/): ");
         operacion = reader.next().charAt(0);
         System.out.printf("Ingrese parte real del número 1: ");
         par_real1 = reader.nextDouble();

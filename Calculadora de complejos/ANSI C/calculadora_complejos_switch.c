@@ -3,13 +3,12 @@
  * entrada: http://iterando.online/ejercicios-resueltos/calculadora-de-numeros-complejos-en-c/
  */
 #include <stdio.h>
-#include <math.h>
 
 int main() {
     char operacion;
     double par_real1, par_imag1, par_real2, par_imag2;
 
-    printf("Ingrese operación (+,-,*,/):");
+    printf("Ingrese operación (+,-,*,/): ");
     scanf("%c", &operacion);
     printf("Ingrese parte real del número 1: ");
     scanf("%lf", &par_real1);
