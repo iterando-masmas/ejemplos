@@ -29,10 +29,10 @@ int main() {
     } else if (operacion == '*') {
         par_real = par_real1 * par_real2 - par_imag1*par_imag2;
         par_imag = par_real1 * par_imag2 + par_imag1*par_real2;
-    } else
-        operacion_valida = 0;
-    printf("La operación no es válida\n");
-
+    } else{
+        operacion_valida = 0; 
+        printf("La operación no es válida\n");
+    }
     if (operacion_valida)
         printf("El resultado es: %.3lf + %.3lfi\n", par_real, par_imag);
     return 0;

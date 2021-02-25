@@ -22,7 +22,7 @@ int main() {
             }
             i++;
         }
-        if (cant_divisores == 0 & n > 1)
+        if (cant_divisores == 0 && n > 1)
             printf("El número es primo\n");
         else
             printf("El número no es primo\n");
