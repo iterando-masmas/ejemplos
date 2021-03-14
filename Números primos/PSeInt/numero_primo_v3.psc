@@ -1,22 +1,20 @@
 //Creado por Andrés Melgar
 //para iterando++ http://iterando.online/
 //entrada: http://iterando.online/ejercicios-resueltos/verificacion-de-numeros-primos-en-pseint/
-Algoritmo Verificacion_Numero_Primo
+Algoritmo Teorema_de_Wilson
   Escribir "Ingrese un número natural (>0): "
   Leer n
   
-  Si n<=0 Entonces
-    Escribir "El número debe ser mayor que cero"
+  Si n<=0 o n>20 Entonces
+    Escribir "El número debe estar entre [1..20]"
   SiNo
-    cant_divisores<-0
+    factorial<-1  
     i<-2
     Mientras i<n Hacer
-      Si n mod i=0 Entonces
-        cant_divisores <- cant_divisores+1
-      FinSi
+      factorial<-factorial*i
       i<-i+1
     FinMientras
-    Si cant_divisores=0 y n>1 Entonces
+    Si (factorial+1) mod n=0 y n>1 Entonces
       Escribir "El número es primo"
     SiNo
       Escribir "El número no es primo"

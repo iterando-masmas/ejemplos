@@ -2,33 +2,27 @@
  * para iterando++ http://iterando.online/
  * entrada: http://iterando.online/ejercicios-resueltos/verificacion-de-numeros-primos-en-java/
  */
-package numero_primo_v1_4;
+package numero_primo_v3;
 
-import static java.lang.Math.sqrt;
 import java.util.Scanner;
 
-public class Numero_Primo_v1_4 {
+public class Numero_Primo_v3 {
 
     public static void main(String[] args) {
         System.out.printf("Ingrese un número natural (>0): ");
         Scanner reader = new Scanner(System.in);
         int n = reader.nextInt();
 
-        if (n <= 0) {
-            System.out.printf("El número debe ser mayor que cero%n");
+        if (n <= 0 || n > 20) {
+            System.out.printf("El número debe estar entre [1..20]%n");
         } else {
-            int cant_divisores = 0;
-            boolean encontro_divisores = false;
-            int mitad = (int) sqrt(n);
+            long factorial = 1;
             int i = 2;
-            while (i <= mitad && !encontro_divisores) {
-                if (n % i == 0) {
-                    cant_divisores++;
-                    encontro_divisores = true;
-                }
+            while (i < n) {
+                factorial *= i;
                 i++;
             }
-            if (cant_divisores == 0 && n > 1) {
+            if ((factorial + 1) % n == 0 && n > 1) {
                 System.out.printf("El número es primo%n");
             } else {
                 System.out.printf("El número no es primo%n");

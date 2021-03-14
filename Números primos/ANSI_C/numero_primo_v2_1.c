@@ -3,7 +3,6 @@
  * entrada: http://iterando.online/ejercicios-resueltos/verificacion-de-numeros-primos-en-c/
  */
 #include <stdio.h>
-#include <math.h>
 
 int main() {
     int n;
@@ -13,18 +12,14 @@ int main() {
     if (n <= 0)
         printf("El número debe ser mayor que cero\n");
     else {
-        int cant_divisores = 0;
         int encontro_divisores = 0;
-        int limite = sqrt(n);
         int i = 2;
-        while (i <= limite && !encontro_divisores) {
-            if (n % i == 0) {
-                cant_divisores++;
+        while (i < n && !encontro_divisores) {
+            if (n % i == 0)
                 encontro_divisores = 1;
-            }
             i++;
         }
-        if (cant_divisores == 0 && n > 1)
+        if (!encontro_divisores && n > 1)
             printf("El número es primo\n");
         else
             printf("El número no es primo\n");

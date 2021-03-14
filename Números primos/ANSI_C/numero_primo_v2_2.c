@@ -12,14 +12,14 @@ int main() {
     if (n <= 0)
         printf("El número debe ser mayor que cero\n");
     else {
-        int cant_divisores = 0;
+        int encontro_divisores = 0;
         int i = 2;
-        while (i < n) {
+        while (i <= n/2 && !encontro_divisores) {
             if (n % i == 0)
-                cant_divisores++;
+                encontro_divisores = 1;
             i++;
         }
-        if (cant_divisores == 0 && n>1)
+        if (!encontro_divisores && n > 1)
             printf("El número es primo\n");
         else
             printf("El número no es primo\n");
