@@ -4,6 +4,7 @@
  */
 package descomposicion_factores_primos_v1;
 
+import static java.lang.Math.sqrt;
 import java.util.Scanner;
 
 public class Descomposicion_factores_primos_v1 {
@@ -35,8 +36,30 @@ public class Descomposicion_factores_primos_v1 {
                 }
                 n /= factor_primo;
             } else {
-                factor_primo++;
+                factor_primo = siguiente_primo(factor_primo);
             }
         } while (n > 1);
+    }
+
+    private static int siguiente_primo(int n) {
+        do {
+            n++;
+        } while (!es_primo(n));
+        return n;
+    }
+
+    private static boolean es_primo(int n) {
+        if (n <= 1) {
+            return false;
+        }
+        boolean encontro_divisores = false;
+        int i = 2;
+        while (i <= sqrt(n) && !encontro_divisores) {
+            if (n % i == 0) {
+                encontro_divisores = true;
+            }
+            i++;
+        }
+        return !encontro_divisores;
     }
 }

@@ -21,50 +21,21 @@ int main() {
     return 0;
 }
 
-int es_primo(int n) {
-    if (n <= 0)
-        return 0;
-    int cant_divisores = 0;
-    int encontro_divisores = 0;
-    int limite = sqrt(n);
-    int i = 2;
-    while (i <= limite && !encontro_divisores) {
-        if (n % i == 0) {
-            cant_divisores++;
-            encontro_divisores = 1;
-        }
-        i++;
-    }
-    if (cant_divisores > 0 || n == 1)
-        return 0;
-    return 1;
-}
-
-int siguiente_primo(int n) {
-    do {
-        n++;
-    } while (!es_primo(n));
-    return n;
-}
-
 void descomponer_factores(int n) {
-    int productoria = 1;
-    int copia_n = n;
+    printf("%d = ", n);
     int factor_primo = 2;
     int cant_factores = 0;
-    int hay_factores = 0;
+    int primer_factor = 1;
     do {
-        int resto = copia_n % factor_primo;
-        if (resto == 0) {
-            copia_n /= factor_primo;
-            productoria *= factor_primo;
+        if (n % factor_primo == 0) {
             cant_factores++;
+            n /= factor_primo;
         } else {
             if (cant_factores > 0) {
-                if (hay_factores)
+                if (!primer_factor)
                     printf("x");
                 else
-                    hay_factores = 1;
+                    primer_factor = 0;
                 if (cant_factores == 1)
                     printf("%d", factor_primo);
                 else
@@ -73,11 +44,36 @@ void descomponer_factores(int n) {
             }
             factor_primo = siguiente_primo(factor_primo);
         }
-    } while (productoria != n);
-    if (hay_factores)
-        printf("x");
-    if (cant_factores == 1)
-        printf("%d", factor_primo);
-    else
-        printf("%d^%d", factor_primo, cant_factores);
+    } while (n > 1);
+    if (cant_factores > 0) {
+        if (!primer_factor)
+            printf("x");
+        else
+            primer_factor = 0;
+        if (cant_factores == 1)
+            printf("%d", factor_primo);
+        else
+            printf("%d^%d", factor_primo, cant_factores);
+        cant_factores = 0;
+    }
+}
+
+int es_primo(int n) {
+    if (n <= 1)
+        return 0;
+    int encontro_divisores = 0;
+    int i = 2;
+    while (i <= sqrt(n) && !encontro_divisores) {
+        if (n % i == 0)
+            encontro_divisores = 1;
+        i++;
+    }
+    return !encontro_divisores;
+}
+
+int siguiente_primo(int n) {
+    do {
+        n++;
+    } while (!es_primo(n));
+    return n;
 }

@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class Descomposicion_factores_primos_v2_2 {
 
     static int cant_factores = 0;
-    static boolean hay_factores = false;
+    static boolean primer_factor = true;
 
     public static void main(String[] args) {
         int n;
@@ -26,23 +26,34 @@ public class Descomposicion_factores_primos_v2_2 {
     }
 
     private static void descomponer_factores(int n) {
-        int productoria = 1;
-        int copia_n = n;
+        System.out.printf("%d = ", n);
         int factor_primo = 2;
         do {
-            int resto = copia_n % factor_primo;
-            if (resto == 0) {
-                copia_n /= factor_primo;
-                productoria *= factor_primo;
+            if (n % factor_primo == 0) {
                 cant_factores++;
+                n /= factor_primo;
             } else {
-                if (cant_factores > 0) {
-                    escribe_factor(factor_primo);
-                }
+                escribe_factor(factor_primo);
                 factor_primo = siguiente_primo(factor_primo);
             }
-        } while (productoria != n);
+        } while (n > 1);
         escribe_factor(factor_primo);
+    }
+
+    private static void escribe_factor(int factor_primo) {
+        if (cant_factores > 0) {
+            if (!primer_factor) {
+                System.out.printf("x");
+            } else {
+                primer_factor = false;
+            }
+            if (cant_factores == 1) {
+                System.out.printf("%d", factor_primo);
+            } else {
+                System.out.printf("%d^%d", factor_primo, cant_factores);
+            }
+            cant_factores = 0;
+        }
     }
 
     private static int siguiente_primo(int n) {
@@ -53,37 +64,17 @@ public class Descomposicion_factores_primos_v2_2 {
     }
 
     private static boolean es_primo(int n) {
-        if (n <= 0) {
+        if (n <= 1) {
             return false;
         }
-        int cant_divisores = 0;
         boolean encontro_divisores = false;
-        int limite = (int) sqrt(n);
         int i = 2;
-        while (i <= limite && !encontro_divisores) {
+        while (i <= sqrt(n) && !encontro_divisores) {
             if (n % i == 0) {
-                cant_divisores++;
                 encontro_divisores = true;
             }
             i++;
         }
-        if (cant_divisores > 0 || n == 1) {
-            return false;
-        }
-        return true;
-    }
-
-    private static void escribe_factor(int factor_primo) {
-        if (hay_factores) {
-            System.out.printf("x");
-        } else {
-            hay_factores = true;
-        }
-        if (cant_factores == 1) {
-            System.out.printf("%d", factor_primo);
-        } else {
-            System.out.printf("%d^%d", factor_primo, cant_factores);
-        }
-        cant_factores = 0;
+        return !encontro_divisores;
     }
 }

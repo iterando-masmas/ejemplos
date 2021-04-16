@@ -23,23 +23,20 @@ public class Descomposicion_factores_primos_v2_1 {
     }
 
     private static void descomponer_factores(int n) {
-        int productoria = 1;
-        int copia_n = n;
+        System.out.printf("%d = ", n);
         int factor_primo = 2;
+        boolean primer_factor = true;
         int cant_factores = 0;
-        boolean hay_factores = false;
         do {
-            int resto = copia_n % factor_primo;
-            if (resto == 0) {
-                copia_n /= factor_primo;
-                productoria *= factor_primo;
+            if (n % factor_primo == 0) {
                 cant_factores++;
+                n /= factor_primo;
             } else {
                 if (cant_factores > 0) {
-                    if (hay_factores) {
+                    if (!primer_factor) {
                         System.out.printf("x");
                     } else {
-                        hay_factores = true;
+                        primer_factor = false;
                     }
                     if (cant_factores == 1) {
                         System.out.printf("%d", factor_primo);
@@ -50,14 +47,19 @@ public class Descomposicion_factores_primos_v2_1 {
                 }
                 factor_primo = siguiente_primo(factor_primo);
             }
-        } while (productoria != n);
-        if (hay_factores) {
-            System.out.printf("x");
-        }
-        if (cant_factores == 1) {
-            System.out.printf("%d", factor_primo);
-        } else {
-            System.out.printf("%d^%d", factor_primo, cant_factores);
+        } while (n > 1);
+        if (cant_factores > 0) {
+            if (!primer_factor) {
+                System.out.printf("x");
+            } else {
+                primer_factor = false;
+            }
+            if (cant_factores == 1) {
+                System.out.printf("%d", factor_primo);
+            } else {
+                System.out.printf("%d^%d", factor_primo, cant_factores);
+            }
+            cant_factores = 0;
         }
     }
 
@@ -69,23 +71,17 @@ public class Descomposicion_factores_primos_v2_1 {
     }
 
     private static boolean es_primo(int n) {
-        if (n <= 0) {
+        if (n <= 1) {
             return false;
         }
-        int cant_divisores = 0;
         boolean encontro_divisores = false;
-        int limite = (int) sqrt(n);
         int i = 2;
-        while (i <= limite && !encontro_divisores) {
+        while (i <= sqrt(n) && !encontro_divisores) {
             if (n % i == 0) {
-                cant_divisores++;
                 encontro_divisores = true;
             }
             i++;
         }
-        if (cant_divisores > 0 || n == 1) {
-            return false;
-        }
-        return true;
+        return !encontro_divisores;
     }
 }

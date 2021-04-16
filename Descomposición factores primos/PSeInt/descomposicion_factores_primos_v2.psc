@@ -1,6 +1,28 @@
-//Creado por Andrés Melgar
+//Creado por AndrÃ©s Melgar
 //para iterando++ http://iterando.online/
 //entrada: http://iterando.online/ejercicios-resueltos/descomposicion-en-factores-primos-en-pseint/
+Funcion verifica_si_es_primo <- es_primo(n)	
+	Si n<=1 Entonces
+		verifica_si_es_primo <- Falso
+	SiNo		
+		encontro_divisores <- Falso
+		i <- 2
+		Mientras i<=rc(n) y no encontro_divisores Hacer
+			Si n mod i=0 Entonces
+				encontro_divisores <- Verdadero
+			FinSi
+			i <- i+1
+		FinMientras		
+		verifica_si_es_primo <- no encontro_divisores		
+	FinSi
+Fin Funcion
+
+Funcion n <- siguiente_primo(n)
+	Repetir
+		n <- n+1
+	Mientras Que no es_primo(n) 
+Fin Funcion
+
 Funcion descomponer_factores(n)
 	Escribir n, " = " Sin Saltar
 	factor_primo <- 2	
@@ -15,17 +37,16 @@ Funcion descomponer_factores(n)
 			FinSi			
 			n <- trunc(n/factor_primo)			
 		SiNo
-			factor_primo <- factor_primo+1
+			factor_primo <- siguiente_primo(factor_primo)
 		FinSi
 	Mientras Que n>1
-	Escribir ""
 FinFuncion
 
 Algoritmo Descomposicion_factores_primos
-	Escribir "Ingrese un número (>1): "
+	Escribir "Ingrese un nÃºmero (>1): "
 	Leer n
 	Si n<=1 Entonces
-		Escribir "Debe ingresar un número mayor que uno"
+		Escribir "Debe ingresar un nÃºmero mayor que uno"
 	SiNo
 		descomponer_factores(n)
 	FinSi		
