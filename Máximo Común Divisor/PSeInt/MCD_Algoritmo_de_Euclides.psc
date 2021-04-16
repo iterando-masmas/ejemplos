@@ -1,16 +1,14 @@
-Funcion n<-MCD(a,b) 
-	Si a>=b Entonces
-		m=a
-		n=b
-	SiNo
-		m=b
-		n=a
+Funcion b<-MCD(a,b) 
+	Si b>a Entonces
+		aux <- a
+		a<-b
+		b<-aux
 	FinSi
 	Repetir
-		resto <- m mod n
+		resto <- a mod b
 		Si resto<>0 Entonces
-			m <- n
-			n <- resto
+			a <- b
+			b <- resto
 		FinSi
 	Mientras Que resto<>0 
 FinFuncion

@@ -1,17 +1,15 @@
-Funcion n<-MCD(a,b) 
-	m <- a
-	n <- b
+Funcion b<-MCD(a,b) 
 	fin_iteracion <- Falso
 	Mientras no fin_iteracion Hacer
-		Si n<m Entonces //n siempre tiene el valor mayor
-			auxiliar <- m
-			m <- n
-			n <- auxiliar
+		Si b<a Entonces 
+			auxiliar <- a
+			a <- b
+			b <- auxiliar
 		FinSi
-		Si m=0 Entonces
+		Si a=0 Entonces
 			fin_iteracion <- Verdadero
 		SiNo
-			n <- n-m
+			b <- b-a
 		FinSi
 	FinMientras 
 FinFuncion

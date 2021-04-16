@@ -20,13 +20,13 @@ Funcion n <- siguiente_primo(n)
 	Mientras Que no es_primo(n) 
 Fin Funcion
 
-Funcion n<-MCD(a,b) 
+Funcion producto<-MCD(a,b) 
 	factor<-2
-	n<-1
+	producto<-1
 	Mientras factor<=a y factor<=b Hacer
 		Si a mod factor=0 o b mod factor=0 Entonces
 			Si a mod factor=0 y b mod factor=0 Entonces
-				n<-n*factor
+				producto<-producto*factor
 			FinSi
 			Si a mod factor=0 Entonces
 				a <- trunc(a/factor)
