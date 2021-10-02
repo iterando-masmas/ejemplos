@@ -5,7 +5,7 @@ def MCD(a,b):
         divisor=b
     while divisor>=1:
         if a%divisor==0 and b%divisor==0:
-            return divisor;	
+            return divisor
         divisor-=1
         
 a=int(input("Ingrese número a: "))

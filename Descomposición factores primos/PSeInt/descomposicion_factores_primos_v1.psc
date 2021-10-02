@@ -1,6 +1,3 @@
-//Creado por Andrés Melgar
-//para iterando++ http://iterando.online/
-//entrada: http://iterando.online/ejercicios-resueltos/descomposicion-en-factores-primos-en-pseint/
 Funcion descomponer_factores(n)
 	Escribir n, " = " Sin Saltar
 	factor_primo <- 2	
@@ -18,7 +15,6 @@ Funcion descomponer_factores(n)
 			factor_primo <- factor_primo+1
 		FinSi
 	Mientras Que n>1
-	Escribir ""
 FinFuncion
 
 Algoritmo Descomposicion_factores_primos

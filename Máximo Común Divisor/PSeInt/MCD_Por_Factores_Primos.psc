@@ -41,11 +41,11 @@ Funcion producto<-MCD(a,b)
 FinFuncion
 
 Algoritmo Maximo_Comun_Divisor
-	Escribir "Ingrese dos números: "
+	Escribir "Ingrese dos nÃºmeros: "
 	Leer a, b
 	Si a>0 y b>0 Entonces
 		Escribir "MCD(", a, ",",b,")=", MCD(a,b)
 	SiNo
-		Escribir "Números inválidos"
+		Escribir "NÃºmeros invÃ¡lidos"
 	FinSi
 FinAlgoritmo

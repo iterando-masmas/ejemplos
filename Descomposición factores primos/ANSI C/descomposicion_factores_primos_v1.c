@@ -9,7 +9,7 @@ void descomponer_factores(int n);
 int main() {
     int n;
     printf("Ingrese un número (>1): ");
-    scanf("%d = ", &n);
+    scanf("%d", &n);
 
     if (n <= 1)
         printf("Debe ingresar un número mayor que uno\n");
